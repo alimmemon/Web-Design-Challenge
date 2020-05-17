@@ -4,30 +4,34 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.sidenav {
+#darkcyan {
+  background-color: #008B8B; /* darkcyan */
+  border: none;
+  font-weight: bold;
+  color: white;
+  padding: 7px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#summary{
+  font-weight: bold;
+  color: darkcyan;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
   
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+#bg {
+  background-color: #00834B;
+
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 </style>

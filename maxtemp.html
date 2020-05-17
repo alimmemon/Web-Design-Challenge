@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <title> Temperature Analysis </title>
+        <meta charset="UTF8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+    <body class='navigation'>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <button class="navbar-brand p-1 mt-2 fixed-top">
+                <a href="index.html"> Weather Analysis </a>
+            </button>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" href="#" id="DropdownMenuButton" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-light" href="cloudiness.html" >Cloudiness</a>
+                            <a class="dropdown-item text-light" href="humidity.html" >Humidity</a>
+                            <a class="dropdown-item text-light" href="maxtemp.html" >Max Temperature</a>
+                            <a class="dropdown-item text-light" href="wind.html" >Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html" > Comparison </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html" > Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" > About the Author</a>
+                    </li>
+    
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid mt-5 p-5">
+            <div class='row justify-content-between'> 
+                <div class="col col-lg-7 col-12 border rounded bg-white h-50">
+                    <h3 class='header p-4'> Temperature Analysis </h3>
+                    <div class="text-center">
+                        <img src="WebVisualizations/Resources/assets/images/fig4.png" alt="Latitude vs Wind Speed" class="social shadow-sm img-fluid">
+                        <img src="Assets/figures/linregress/Latitude_Temperature_Northern.jpg" alt="Latitude vs Wind Speed" class="social shadow-sm img-fluid">
+                    </div>
+                    <p class="text-muted m-4"> These figures are displaying linear regression models describing the relationship between Temperature and latitude in both the 
+                        northern and southern hemisphere. Based on the r-squared values, we can qualify these relationships as moderate; specifically, 46% and 67% of the variance 
+                        in the southern and northern hemisphere, respectively, can be explained by the linear regression model. 
+                    <br><br> These relationships are stronger then the other relationships displayed on this website. That being said, other variables like topography, local-weather anamolies
+                        and distance from the ocean may be affecting the strength of the relationships displayed.  </p>
+                </div>
+                <div class="second-con col col-lg-4 col-12 border rounded bg-white">
+                    <h3 class='header px-4 pt-4'> Visualization</h3>
+                    <div class="w-100 d-none d-block"></div>
+                    <p class='px-4 mb-4 text-muted'> Click on any graph to see individual analyses </p>
+                        <a href="temp.html" >
+                            <img src="Assets/figures/linregress/Latitude_Temperature_Northern.jpg" alt="Latitude vs Temperature" class="img-fluid col-lg-12">
+                        </a>
+                        <a href="humid.html">
+                            <img src="Assets/figures/linregress/Latitude_Humidity_Northern.jpg" alt="Latitude vs Humidity" class="img-fluid col-lg-12">
+                        </a>
+                        <a href="cloud.html">
+                            <img src="Assets/figures/linregress/Latitude_Cloudiness_Northern.jpg" alt="Latitude vs Cloudiness" class="img-fluid col-lg-12">
+                        </a>
+                        <a href="wind.html">
+                            <img src="Assets/figures/linregress/Latitude_Wind_Speed_Northern.jpg" alt="Latitude vs Wind Speed" class="img-fluid col-lg-12 pb-4">
+                        </a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
